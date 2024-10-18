@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+
+    <form method="post">
+      <!-- Name Field -->
+      <label for="name">Your Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="feedback">Your Feedback/Comments:</label><br />
+      <textarea
+        id="feedback"
+        name="feedback"
+        rows="5"
+        cols="50"
+        required
+      ></textarea
+      ><br /><br />
+
+      <label for="rating">Rate Our Service (1 to 5 stars):</label><br />
+      <input type="radio" id="star1" name="rating" value="1" required />
+      <label for="star1">1</label><br />
+      <input type="radio" id="star2" name="rating" value="2" />
+      <label for="star2">2</label><br />
+      <input type="radio" id="star3" name="rating" value="3" />
+      <label for="star3">3</label><br />
+      <input type="radio" id="star4" name="rating" value="4" />
+      <label for="star4">4</label><br />
+      <input type="radio" id="star5" name="rating" value="5" />
+      <label for="star5">5</label><br /><br />
+
+      <label for="recommend">Would you recommend our service to others?</label
+      ><br />
+      <input type="checkbox" id="recommend" name="recommend" value="Yes" />
+      <label for="recommend">Yes</label><br /><br />
+
+      <input type="submit" value="Submit Feedback" />
+    </form>
+  </body>
+</html>
