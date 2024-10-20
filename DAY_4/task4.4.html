@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(231, 237, 237);
+      }
+      .container {
+        display: flex;
+        width: 60%;
+        height: auto;
+        /* border: 2px solid black; */
+        margin-top: 10%;
+        border-radius: 20px;    
+        box-shadow: 5px 5px 5px 5px rgb(192, 182, 182); 
+}
+      .first {
+        width: 50%;
+        padding: 50px;
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+      }
+      .first form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+      }
+      .second {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        background-color: #26a042;
+        padding: 50px;
+        gap: 20px;
+        color: white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      .btn {
+        text-decoration: none;
+        background-color: hsl(120, 91%, 68%);
+        color: white;
+        padding: 20px;
+        font-size: 1.5rem;
+        height: auto;
+        width: inherit;
+        border-radius: 10px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      .btn1 {
+        text-decoration: none;
+        color: white;
+        background-color: #28a745;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 7px;
+        margin-top: 10px;
+      }
+      .btn2 {
+        text-decoration: none;
+        color: #0f5b20;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first">
+        <form action="post">
+          <h1>Signin</h1>
+          <input type="text" placeholder="Username" />
+          <input type="password" placeholder="*********" />
+          <a href="#" class="btn1">Signin</a>
+          <a href="#" class="btn2">or signin with</a>
+        </form>
+      </div>
+      <div class="second">
+        <h1 style="font-size: 3rem">Welcome back!</h1>
+        <p style="font-size: 2rem">
+          Welcome back! We are so happy to here. It's greate to see you again.
+          We hope you had a safe and enjoyable time away
+        </p>
+        <a href="#" class="btn">No account yet? Signup</a>
+      </div>
+    </div>
+  </body>
+</html>
